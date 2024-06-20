@@ -1,0 +1,36 @@
+{% extends 'medical_site/base.html' %}
+{% load static %}
+{% load my_tags %}
+
+{% block icon %}
+    <title>Профиль врача</title>
+    <link rel="icon" href="{% static 'images/detail.png' %}" type="image/x-icon">
+{% endblock %}
+
+{% block content %}
+<div class="col-12 mb-5">
+    <a href="{% url 'medical_site:add_doctor' %}" class="btn btn-outline-primary">Добавить врача</a>
+</div>
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card mb-4 box-shadow">
+        <img class="card-img-top"
+             src="{{ object.avatar | mymedia }}"
+             alt="Card image cap">
+          <div class="card-body">
+              <p class="card-text"><strong>Имя и фамилия врача:</strong> {{ object.first_name }} {{ object.last_name }}
+              </p>
+              <p class="card-text"><strong>Опыт работы в годах:</strong> {{ object.year_of_experience }} </p>
+              <p class="card-text"> <a
+                      href="{% url 'medical_site:view_hospital' object.hospital.pk %}" ><strong>Место работы:</strong> {{object.hospital}}</a>
+              </p>
+              <p class="card-text"><a href="{% url 'medical_site:contact' %}"><strong>Записаться на приём</strong></a></p>
+        </div>
+          <div class="btn-group">
+                <a href="{% url 'medical_site:edit_doctor' object.pk %}" type="button" class="btn btn-sm btn-outline-secondary">Редактировать</a>
+                <a href="{% url 'medical_site:delete_doctor' object.pk %}" type="button" class="btn btn-sm btn-outline-secondary">Удалить</a>
+          </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}

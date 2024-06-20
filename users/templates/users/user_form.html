@@ -1,0 +1,32 @@
+{% extends 'medical_site/base.html' %}
+{% load static %}
+
+{% block icon %}
+    <title>Зарегистрироваться</title>
+    <link rel="icon" href="{% static 'images/profile.png' %}" type="image/x-icon">
+{% endblock %}
+
+
+
+{% block content %}
+    <div class="col-12">
+        <div class="row">
+            <form method="post" enctype="multipart/form-data">
+                     <div class="col-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h3 class="card-title">Профиль</h3>
+                                </div>
+                            <div class="card-body">
+                                    {% csrf_token %}
+                                    {{ form.as_p }}
+                                    <button type="submit" class="btn btn-success">Сохранить</button>
+                                    <a href="{% url 'users:generate_new_password' %}" class="btn btn-danger">Восстановить пароль(Новый пароль будет отправлен на вашу почту)</a>
+                            </div>
+                        </div>
+                     </div>
+            </form>
+        </div>
+    </div>
+
+{% endblock %}

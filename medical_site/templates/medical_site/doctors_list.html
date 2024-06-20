@@ -1,0 +1,72 @@
+{% extends 'medical_site/base.html' %}
+{% load static %}
+{% load my_tags %}
+
+{% block icon %}
+<title>Список врачей</title>
+<link rel="icon" href="{% static 'images/list.png' %}" type="image/x-icon">
+{% endblock %}
+
+{% block content %}
+
+<section class="vc_section">
+    <div class="vc_row wpb_row vc_row-fluid">
+        <div class="wpb_column vc_column_container vc_col-sm-12">
+            <div class="vc_column-inner">
+                <div class="wpb_wrapper">
+                    <div class="es-resp">
+                        <div class="visible-xl" style="height: 64px;"></div>
+                        <div class="hidden-xl hidden-md hidden-sm hidden-ms hidden-xs" style="height: 64px;"></div>
+                        <div class="visible-md" style="height: 64px;"></div>
+                        <div class="visible-sm " style="height: 64px;"></div>
+                        <div class="visible-ms" style="height: 32px;"></div>
+                        <div class="visible-xs" style="height: 32px;"></div>
+                    </div>
+                    <div class="heading  default align-center color-black subcolor-main transform-default has-subheader icon-type-hidden heading-tag-h2"
+                         id="like_sc_header_42275378">
+                        <h2 class="header ltx-sr-id-like_sc_header_42275378487944521 ltx-sr ltx-sr-effect-fade_in ltx-sr-el-block ltx-sr-delay-0 ltx-sr-duration-1000 ltx-sr-sequences-0">
+                            Наши врачи</h2></div>
+                    <div class="ltx-content-width col-align-center" id="like_sc_content_width_2131131225"
+                         style="max-width: 770px">
+                        <div class="ltx-wrapper">
+                        </div>
+                    </div>
+                    <div class="swiper-container slider-filter-container team-sc team-list ltx-team-slider "
+                         data-cols="3" id="like_sc_team_slider_981825364">
+                        {% for doctor in doctors_list %}
+                        <div class="swiper-wrapper" style="transform: translate3d(0px, 0px, 0px);">
+                            <div class="swiper-slide filter-item filter-type-0 filter-type-275 swiper-slide-active"
+                                 style="width: 504px; margin-right: 30px;">
+                                <div class="team-item item matchHeight item-type-slider " style="height: 713px;">
+                                    <a
+                                            href="{% url 'medical_site:view_doctor' doctor.pk %}" class="image"><img
+                                            width="355" height="355"
+                                            src="{{ doctor.avatar | mymedia }}"
+                                            class="attachment-holamed-team size-holamed-team" alt="" decoding="async"
+                                            loading="lazy"
+                                            srcset="{{ doctor.avatar | mymedia }}"
+                                            sizes="(max-width: 355px) 100vw, 355px"/></a><a
+                                        href="{% url 'medical_site:view_doctor' doctor.pk %}"><h5 class="header">
+                                    {{ doctor.first_name }} {{ doctor.last_name }}</h5></a>
+                                    <p class="subheader">{{ doctor.department }}</p>
+                                    <p class="cut">Клиника: {{doctor.hospital}}</p>
+                                    <p class="cut">Опыт работы в годах: {{ doctor.year_of_experience }} </p>
+                                </div>
+                                <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+                            {% endfor %}
+                            <div class="es-resp">
+                                <div class="visible-xl" style="height: 90px;"></div>
+                                <div class="hidden-xl hidden-md hidden-sm hidden-ms hidden-xs"
+                                     style="height: 90px;"></div>
+                                <div class="visible-md" style="height: 90px;"></div>
+                                <div class="visible-sm " style="height: 90px;"></div>
+                                <div class="visible-ms" style="height: 64px;"></div>
+                                <div class="visible-xs" style="height: 64px;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+ </section>
+{% endblock %}

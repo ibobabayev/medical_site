@@ -1,0 +1,70 @@
+{% extends 'medical_site/base.html' %}
+{% load static %}
+{% load my_tags %}
+{% block icon %}
+<title>Блоги</title>
+<link rel="icon" href="{% static 'images/list.png' %}" type="image/x-icon">
+{% endblock %}
+
+{% block content %}
+<div class="heading  default align-center color-black subcolor-main transform-default has-subheader icon-type-hidden   vc_custom_1541378187170 heading-tag-h2"
+     id="like_sc_header_509212853"><h6
+        class="subheader ltx-sr-id-like_sc_header_5092128531929017891 ltx-sr ltx-sr-effect-fade_in ltx-sr-el-block ltx-sr-delay-100 ltx-sr-duration-300 ltx-sr-sequences-50">
+    наши статьи</h6>
+    <h2 class="header ltx-sr-id-like_sc_header_5092128531342279091 ltx-sr ltx-sr-effect-fade_in ltx-sr-el-block ltx-sr-delay-0 ltx-sr-duration-1000 ltx-sr-sequences-0">
+        Это интересно!</h2></div>
+<div class="es-resp">
+    <div class="visible-xl" style="height: 36px;"></div>
+    <div class="hidden-xl hidden-md hidden-sm hidden-ms hidden-xs" style="height: 36px;"></div>
+    <div class="visible-md" style="height: 36px;"></div>
+    <div class="visible-sm " style="height: 36px;"></div>
+    <div class="visible-ms" style="height: 36px;"></div>
+    <div class="visible-xs" style="height: 36px;"></div>
+</div>
+{% for blog in blog_list %}
+<div class="col-lg-4 col-md-3 col-md-push-0 col-sm-6 col-ms-12 col-xs-12">
+    <article id="post-6615"
+             class="ltx-featured-post post-6615 post type-post status-publish format-standard has-post-thumbnail hentry category-cardiology category-surgery tag-cardiology tag-food tag-health tag-neurosurgery">
+        <a href="{% url 'medical_site:view_blog' blog.pk %}"
+           class="photo"><img width="300" height="300"
+                              src="{{ blog.preview | mymedia }}"
+                              class="attachment-holamed-blog-featured size-holamed-blog-featured wp-post-image"
+                              alt="" decoding="async" loading="lazy" srcset="{{ blog.preview | mymedia }}"
+                              sizes="(max-width: 355px) 100vw, 355px"/>
+            <div class="description">
+                <a href="{% url 'medical_site:view_blog' blog.pk %}"
+                   class="header"><h3>{{ blog.name }}</h3></a>
+                <div class="blog-info">
+                    <ul>
+                        <li class="ltx-icon-date">
+                            <a href="http://holamed.like-themes.com/the-best-recreation-areas-for-general-immunity/"
+                               class="ltx-date"><span class="fa fa-clock-o"></span><span class="dt">{{ blog.created_at }}</span></a>
+                        </li>
+                        <li class="ltx-icon-fav">
+                            <span class="fa fa-eye"></span><i>{{blog.views_count}}</i>
+                    </ul>
+                </div>
+            </div>
+    </article>
+</div>
+
+{% endfor %}
+<div class="clear"></div>
+<div class="es-resp">
+    <div class="visible-xl" style="height: 48px;"></div>
+    <div class="hidden-xl hidden-md hidden-sm hidden-ms hidden-xs" style="height: 48px;"></div>
+    <div class="visible-md" style="height: 48px;"></div>
+    <div class="visible-sm " style="height: 48px;"></div>
+    <div class="visible-ms" style="height: 48px;"></div>
+    <div class="visible-xs" style="height: 48px;"></div>
+</div>
+<div class="es-resp">
+    <div class="visible-xl" style="height: 140px;"></div>
+    <div class="hidden-xl hidden-md hidden-sm hidden-ms hidden-xs" style="height: 128px;"></div>
+    <div class="visible-md" style="height: 128px;"></div>
+    <div class="visible-sm " style="height: 128px;"></div>
+    <div class="visible-ms" style="height: 96px;"></div>
+    <div class="visible-xs" style="height: 96px;"></div>
+</div>
+
+{% endblock %}

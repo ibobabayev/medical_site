@@ -1,0 +1,1372 @@
+[
+  {
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+      "action_time": "2024-06-17T21:15:10.437Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "1",
+      "object_repr": "Отделения Кардиология",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+      "action_time": "2024-06-17T21:15:33.567Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "2",
+      "object_repr": "Отделения Нейрохирургия",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+      "action_time": "2024-06-17T21:16:04.104Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "3",
+      "object_repr": "Отделения Урология",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+      "action_time": "2024-06-17T21:16:21.659Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "3",
+      "object_repr": "Отделения Урология",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041e\\u043f\\u0438\\u0441\\u0430\\u043d\\u0438\\u0435 \\u0434\\u0435\\u043f\\u0430\\u0440\\u0442\\u0430\\u043c\\u0435\\u043d\\u0442\\u0430\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+      "action_time": "2024-06-17T21:17:03.535Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "4",
+      "object_repr": "Отделения Онкология",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+      "action_time": "2024-06-17T21:17:22.569Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "5",
+      "object_repr": "Отделения Педиатрия",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+      "action_time": "2024-06-17T21:18:36.035Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "6",
+      "object_repr": "Отделения Стоматолоогия",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 8,
+    "fields": {
+      "action_time": "2024-06-17T21:19:36.706Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "7",
+      "object_repr": "Отделения Дерматология",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 9,
+    "fields": {
+      "action_time": "2024-06-17T21:20:15.304Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "8",
+      "object_repr": "Отделения Ортопедия",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 10,
+    "fields": {
+      "action_time": "2024-06-17T21:21:06.329Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "9",
+      "object_repr": "Отделения Эндокринолоогия",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 11,
+    "fields": {
+      "action_time": "2024-06-17T21:21:37.278Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "10",
+      "object_repr": "Отделения Пульмонолоогия",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 12,
+    "fields": {
+      "action_time": "2024-06-17T21:35:58.002Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "2",
+      "object_repr": "Отделения Неврология",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041e\\u0442\\u0434\\u0435\\u043b\\u0435\\u043d\\u0438\\u044f \\u043c\\u0435\\u0434\\u0438\\u0446\\u0438\\u043d\\u044b\", \"\\u041e\\u043f\\u0438\\u0441\\u0430\\u043d\\u0438\\u0435 \\u0434\\u0435\\u043f\\u0430\\u0440\\u0442\\u0430\\u043c\\u0435\\u043d\\u0442\\u0430\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 13,
+    "fields": {
+      "action_time": "2024-06-17T21:45:54.299Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "9",
+      "object_repr": "Отделения Гастроэнтеролоогия",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041e\\u0442\\u0434\\u0435\\u043b\\u0435\\u043d\\u0438\\u044f \\u043c\\u0435\\u0434\\u0438\\u0446\\u0438\\u043d\\u044b\", \"\\u041e\\u043f\\u0438\\u0441\\u0430\\u043d\\u0438\\u0435 \\u0434\\u0435\\u043f\\u0430\\u0440\\u0442\\u0430\\u043c\\u0435\\u043d\\u0442\\u0430\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 14,
+    "fields": {
+      "action_time": "2024-06-17T21:46:01.101Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "9",
+      "object_repr": "Отделения Гастроэнтерология",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041e\\u0442\\u0434\\u0435\\u043b\\u0435\\u043d\\u0438\\u044f \\u043c\\u0435\\u0434\\u0438\\u0446\\u0438\\u043d\\u044b\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 15,
+    "fields": {
+      "action_time": "2024-06-17T21:46:09.163Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "10",
+      "object_repr": "Отделения Пульмонология",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041e\\u0442\\u0434\\u0435\\u043b\\u0435\\u043d\\u0438\\u044f \\u043c\\u0435\\u0434\\u0438\\u0446\\u0438\\u043d\\u044b\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 16,
+    "fields": {
+      "action_time": "2024-06-17T21:46:16.691Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "6",
+      "object_repr": "Отделения Стоматология",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041e\\u0442\\u0434\\u0435\\u043b\\u0435\\u043d\\u0438\\u044f \\u043c\\u0435\\u0434\\u0438\\u0446\\u0438\\u043d\\u044b\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 17,
+    "fields": {
+      "action_time": "2024-06-18T20:01:50.409Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "11",
+      "object_repr": "Врач X Y работает в отделении Отделения Дерматология в клинике Клиника Клиника Нордвест (Nordwest) в Германия, Франкфурт-на-Майне",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 18,
+    "fields": {
+      "action_time": "2024-06-19T09:18:50.015Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "2",
+      "object_repr": "Имя продукта: Tonometer AD-05  Цена: 4 рублей",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 19,
+    "fields": {
+      "action_time": "2024-06-19T09:20:10.613Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "3",
+      "object_repr": "Имя продукта: Аспирин  Цена: 200 рублей",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 20,
+    "fields": {
+      "action_time": "2024-06-19T09:20:18.032Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "2",
+      "object_repr": "Имя продукта: Tonometer AD-05  Цена: 4000 рублей",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u0426\\u0435\\u043d\\u0430\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 21,
+    "fields": {
+      "action_time": "2024-06-19T09:24:03.347Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "4",
+      "object_repr": "Имя продукта: Ингалятор от астмы  Цена: 10000 рублей",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 22,
+    "fields": {
+      "action_time": "2024-06-19T10:29:02.480Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "1",
+      "object_repr": "BakMil +90-212-530-14-53",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 23,
+    "fields": {
+      "action_time": "2024-06-19T10:41:54.448Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "10",
+      "object_repr": "Отделения Эндокринология",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"\\u041e\\u0442\\u0434\\u0435\\u043b\\u0435\\u043d\\u0438\\u044f \\u043c\\u0435\\u0434\\u0438\\u0446\\u0438\\u043d\\u044b\", \"\\u041e\\u043f\\u0438\\u0441\\u0430\\u043d\\u0438\\u0435 \\u0434\\u0435\\u043f\\u0430\\u0440\\u0442\\u0430\\u043c\\u0435\\u043d\\u0442\\u0430\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 24,
+    "fields": {
+      "action_time": "2024-06-19T15:49:31.973Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "2",
+      "object_repr": "ibish_acmilan@mail.ru",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 25,
+    "fields": {
+      "action_time": "2024-06-19T15:55:48.034Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "3",
+      "object_repr": "ibish_acmilan@mail.ru",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 26,
+    "fields": {
+      "action_time": "2024-06-19T15:59:32.854Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "4",
+      "object_repr": "ibish_acmilan@mail.ru",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 27,
+    "fields": {
+      "action_time": "2024-06-19T16:30:38.624Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "5",
+      "object_repr": "ibish_acmilan@mail.ru",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 28,
+    "fields": {
+      "action_time": "2024-06-19T18:45:54.170Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "6",
+      "object_repr": "ibish_acmilan@mail.ru",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 29,
+    "fields": {
+      "action_time": "2024-06-19T18:52:40.245Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "7",
+      "object_repr": "ibish_acmilan@mail.ru",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 30,
+    "fields": {
+      "action_time": "2024-06-19T18:56:33.644Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "8",
+      "object_repr": "ibish_acmilan@mail.ru",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 31,
+    "fields": {
+      "action_time": "2024-06-19T19:40:25.785Z",
+      "user": 1,
+      "content_type": 12,
+      "object_id": "9",
+      "object_repr": "ibish_acmilan@mail.ru",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 1,
+    "fields": {
+      "name": "Can add log entry",
+      "content_type": 1,
+      "codename": "add_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 2,
+    "fields": {
+      "name": "Can change log entry",
+      "content_type": 1,
+      "codename": "change_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 3,
+    "fields": {
+      "name": "Can delete log entry",
+      "content_type": 1,
+      "codename": "delete_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 4,
+    "fields": {
+      "name": "Can view log entry",
+      "content_type": 1,
+      "codename": "view_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 5,
+    "fields": {
+      "name": "Can add permission",
+      "content_type": 2,
+      "codename": "add_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 6,
+    "fields": {
+      "name": "Can change permission",
+      "content_type": 2,
+      "codename": "change_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 7,
+    "fields": {
+      "name": "Can delete permission",
+      "content_type": 2,
+      "codename": "delete_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 8,
+    "fields": {
+      "name": "Can view permission",
+      "content_type": 2,
+      "codename": "view_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 9,
+    "fields": {
+      "name": "Can add group",
+      "content_type": 3,
+      "codename": "add_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 10,
+    "fields": {
+      "name": "Can change group",
+      "content_type": 3,
+      "codename": "change_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 11,
+    "fields": {
+      "name": "Can delete group",
+      "content_type": 3,
+      "codename": "delete_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 12,
+    "fields": {
+      "name": "Can view group",
+      "content_type": 3,
+      "codename": "view_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 13,
+    "fields": {
+      "name": "Can add content type",
+      "content_type": 4,
+      "codename": "add_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 14,
+    "fields": {
+      "name": "Can change content type",
+      "content_type": 4,
+      "codename": "change_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 15,
+    "fields": {
+      "name": "Can delete content type",
+      "content_type": 4,
+      "codename": "delete_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 16,
+    "fields": {
+      "name": "Can view content type",
+      "content_type": 4,
+      "codename": "view_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 17,
+    "fields": {
+      "name": "Can add session",
+      "content_type": 5,
+      "codename": "add_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 18,
+    "fields": {
+      "name": "Can change session",
+      "content_type": 5,
+      "codename": "change_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 19,
+    "fields": {
+      "name": "Can delete session",
+      "content_type": 5,
+      "codename": "delete_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 20,
+    "fields": {
+      "name": "Can view session",
+      "content_type": 5,
+      "codename": "view_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 21,
+    "fields": {
+      "name": "Can add Блог",
+      "content_type": 6,
+      "codename": "add_blog"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 22,
+    "fields": {
+      "name": "Can change Блог",
+      "content_type": 6,
+      "codename": "change_blog"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 23,
+    "fields": {
+      "name": "Can delete Блог",
+      "content_type": 6,
+      "codename": "delete_blog"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 24,
+    "fields": {
+      "name": "Can view Блог",
+      "content_type": 6,
+      "codename": "view_blog"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 25,
+    "fields": {
+      "name": "Can add Контакт",
+      "content_type": 7,
+      "codename": "add_contact"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 26,
+    "fields": {
+      "name": "Can change Контакт",
+      "content_type": 7,
+      "codename": "change_contact"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 27,
+    "fields": {
+      "name": "Can delete Контакт",
+      "content_type": 7,
+      "codename": "delete_contact"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 28,
+    "fields": {
+      "name": "Can view Контакт",
+      "content_type": 7,
+      "codename": "view_contact"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 29,
+    "fields": {
+      "name": "Can add Отделения",
+      "content_type": 8,
+      "codename": "add_department"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 30,
+    "fields": {
+      "name": "Can change Отделения",
+      "content_type": 8,
+      "codename": "change_department"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 31,
+    "fields": {
+      "name": "Can delete Отделения",
+      "content_type": 8,
+      "codename": "delete_department"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 32,
+    "fields": {
+      "name": "Can view Отделения",
+      "content_type": 8,
+      "codename": "view_department"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 33,
+    "fields": {
+      "name": "Can add Врач",
+      "content_type": 9,
+      "codename": "add_doctors"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 34,
+    "fields": {
+      "name": "Can change Врач",
+      "content_type": 9,
+      "codename": "change_doctors"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 35,
+    "fields": {
+      "name": "Can delete Врач",
+      "content_type": 9,
+      "codename": "delete_doctors"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 36,
+    "fields": {
+      "name": "Can view Врач",
+      "content_type": 9,
+      "codename": "view_doctors"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 37,
+    "fields": {
+      "name": "Can add Клиника",
+      "content_type": 10,
+      "codename": "add_hospitals"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 38,
+    "fields": {
+      "name": "Can change Клиника",
+      "content_type": 10,
+      "codename": "change_hospitals"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 39,
+    "fields": {
+      "name": "Can delete Клиника",
+      "content_type": 10,
+      "codename": "delete_hospitals"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 40,
+    "fields": {
+      "name": "Can view Клиника",
+      "content_type": 10,
+      "codename": "view_hospitals"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 41,
+    "fields": {
+      "name": "Can add Продукт",
+      "content_type": 11,
+      "codename": "add_products"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 42,
+    "fields": {
+      "name": "Can change Продукт",
+      "content_type": 11,
+      "codename": "change_products"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 43,
+    "fields": {
+      "name": "Can delete Продукт",
+      "content_type": 11,
+      "codename": "delete_products"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 44,
+    "fields": {
+      "name": "Can view Продукт",
+      "content_type": 11,
+      "codename": "view_products"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 45,
+    "fields": {
+      "name": "Can add user",
+      "content_type": 12,
+      "codename": "add_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 46,
+    "fields": {
+      "name": "Can change user",
+      "content_type": 12,
+      "codename": "change_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 47,
+    "fields": {
+      "name": "Can delete user",
+      "content_type": 12,
+      "codename": "delete_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 48,
+    "fields": {
+      "name": "Can view user",
+      "content_type": 12,
+      "codename": "view_user"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 1,
+    "fields": {
+      "app_label": "admin",
+      "model": "logentry"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 2,
+    "fields": {
+      "app_label": "auth",
+      "model": "permission"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 3,
+    "fields": {
+      "app_label": "auth",
+      "model": "group"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 4,
+    "fields": {
+      "app_label": "contenttypes",
+      "model": "contenttype"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 5,
+    "fields": {
+      "app_label": "sessions",
+      "model": "session"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 6,
+    "fields": {
+      "app_label": "medical_site",
+      "model": "blog"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 7,
+    "fields": {
+      "app_label": "medical_site",
+      "model": "contact"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 8,
+    "fields": {
+      "app_label": "medical_site",
+      "model": "department"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 9,
+    "fields": {
+      "app_label": "medical_site",
+      "model": "doctors"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 10,
+    "fields": {
+      "app_label": "medical_site",
+      "model": "hospitals"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 11,
+    "fields": {
+      "app_label": "medical_site",
+      "model": "products"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 12,
+    "fields": {
+      "app_label": "users",
+      "model": "user"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "pm0mpkn8dqfayl7uvwtzq4wfbvzc9f6l",
+    "fields": {
+      "session_data": ".eJxVjEEOwiAQRe_C2pChHZjUpXvPQBgYpGogKe3KeHdt0oVu_3vvv5QP21r81mXxc1JnZUCdfkcO8SF1J-ke6q3p2Oq6zKx3RR-062tL8rwc7t9BCb18a84IAYNlQ2QcRTEZE0xWOA7TgBYt4Jgtj2iAMgFDHjPZJOIiuWTU-wP7vzfH:1sK1WG:ab3xbXnq07i9J49XFmZJICK3bUl3hRPSVHko5QZFyaI",
+      "expire_date": "2024-07-03T20:03:00.836Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "pn1w60drryt4zoi2zarklnt0ttf1beqn",
+    "fields": {
+      "session_data": ".eJxVjEsOAiEQBe_C2hB-0uLSvWcg0N3IqIFkPivj3ZVkFrqtqvdeIqZtrXFbeI4TibPQ4vDLcsIHtyHontqtS-xtnacsRyJ3u8hrJ35e9vbvoKaljrXLyF6poAsxFG_YayioQKMdxFpOQPCFwQUTCKxHLNmcjp6cK068P_fkOB0:1sID7I:0FjzZCIe60KW1PtsGRYDxxLpbev53_RgLzu-0zRujZM",
+      "expire_date": "2024-06-28T20:01:44.936Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "syws6ga1nv5jhfcjzszn07nvytwygujm",
+    "fields": {
+      "session_data": ".eJxVjEEOwiAQRe_C2pChHZjUpXvPQBgYpGogKe3KeHdt0oVu_3vvv5QP21r81mXxc1JnZUCdfkcO8SF1J-ke6q3p2Oq6zKx3RR-062tL8rwc7t9BCb18a84IAYNlQ2QcRTEZE0xWOA7TgBYt4Jgtj2iAMgFDHjPZJOIiuWTU-wP7vzfH:1sK1B8:Euc-cmpB3ijIACop6z5vM8ArdGx1L1GpcZMks2ZZNZg",
+      "expire_date": "2024-07-03T19:41:10.454Z"
+    }
+  },
+  {
+    "model": "medical_site.hospitals",
+    "pk": 1,
+    "fields": {
+      "name": "Клиника Мемориал",
+      "description": "Клиника Мемориал (Memorial Hospital) — крупнейший многопрофильный медицинский центр Стамбула. Это 1-й госпиталь в Турции и 21-й в мире, который получил аккредитацию за качество лечения от Международной объединенной комиссии JCI.",
+      "location": "Турция, Стамбул",
+      "preview": "hospitals/memorial-bahcelievler-hastanesi.jpg",
+      "email": "memorial@com.tr",
+      "owner": 1
+    }
+  },
+  {
+    "model": "medical_site.hospitals",
+    "pk": 2,
+    "fields": {
+      "name": "Клиника Нордвест (Nordwest)",
+      "description": "Клиника Нордвест (Nordwest) — крупная многопрофильная больница во Франкфурте-на-Майне, Германия.\r\nСпециализация — онкология, неврология, нейрохирургия и ортопедия.\r\nВ 2019 году Нордвест вошел в ТОП немецких госпиталей по эффективности радиотерапии и успешности лечения рака толстого кишечника.\r\nЕжегодно в медицинский центр обращаются свыше 25 000 пациентов.",
+      "location": "Германия, Франкфурт-на-Майне",
+      "preview": "hospitals/nordwest.jpg",
+      "email": "nordwest@mail.com.de",
+      "owner": 1
+    }
+  },
+  {
+    "model": "medical_site.hospitals",
+    "pk": 3,
+    "fields": {
+      "name": "Клиника Сураски (Ихилов)",
+      "description": "Медицинский центр им. Сураски (Ихилов) — крупнейший медицинский центр Израиля. Основная специализация клиники — онкология, нейрохирургия, кардиология, ортопедия. Ежегодно клиника принимает около 1 800 000 пациентов. Более 400 000 из них проходят лечение. Журнал Newsweek включил Сураски в ТОП-10 самых популярных клиник для медицинского туризма в мире. Врачи Ихилов входят в ТОП-5 лучших специалистов по версии Forbes. Каждый год врачи Ихилов проводят около 34 000 хирургических вмешательств разного профиля.",
+      "location": "Израиль, Тель-Авив",
+      "preview": "hospitals/surasiki.jpg",
+      "email": "surasiki@mail.com.il",
+      "owner": 1
+    }
+  },
+  {
+    "model": "medical_site.hospitals",
+    "pk": 4,
+    "fields": {
+      "name": "Сан-Рафаэль",
+      "description": "Клиника Сан-Рафаэль (Ospedale San Raffaele) в Милане — один из лучших научно-исследовательских медицинских центров Европы, лидер по лечению редких иммунных и генетических заболеваний. По данным клиники, здесь разработана первая в мире генная терапия стволовыми клетками для пациентов с тяжелым комбинированным иммунодефицитом (ADA-SCID). Сан-Рафаэль специализируется на онкологии, онкогематологии, нейрохирургии, кардиохирургии, гинекологии. Ежегодно врачи медицинского центра проводят более 50 000 операций.",
+      "location": "Италия, Милан",
+      "preview": "hospitals/san_rafael.jpeg",
+      "email": "san_rafael@mail.it",
+      "owner": 1
+    }
+  },
+  {
+    "model": "medical_site.hospitals",
+    "pk": 5,
+    "fields": {
+      "name": "Частная клиника Дёблинг",
+      "description": "Клиника Дёблинг — это частный многопрофильный госпиталь повышенного комфорта в столице Австрии, Вене. Журнал Forbes включил Дёблинг в ТОП-10 лучших больниц мира. Медицинский центр специализируется на гинекологии, акушерстве, ортопедии, онкологии, гастроэнтерологии и хирургии. Ежегодно здесь проходят лечение более 14 000 пациентов из Австрии и из-за рубежа.",
+      "location": "Австрия, Вена",
+      "preview": "hospitals/dobling.jpeg",
+      "email": "dobling@mail.com.at",
+      "owner": 1
+    }
+  },
+  {
+    "model": "medical_site.hospitals",
+    "pk": 6,
+    "fields": {
+      "name": "Клиника «Евроонко»",
+      "description": "«Евроонко» – современное медицинское учреждение, целью создания которого является проведение высокоэффективного, успешно конкурирующего с ведущими западными клиниками, лечения клиентов, у которых диагностированы онкологические патологии. Опытные специалисты придерживаются принципа доказательной медицины, используют инновационные методики лечения, соответствующие европейским стандартам.",
+      "location": "Москва, Россия",
+      "preview": "hospitals/evrookno.jpg",
+      "email": "evrookno@mail.ru",
+      "owner": 1
+    }
+  },
+  {
+    "model": "medical_site.department",
+    "pk": 1,
+    "fields": {
+      "name": "Кардиология",
+      "description": "Раздел медицины, занимающийся изучением сердечно-сосудистой системы человека,строения и развития сердца и сосудов, их функций, а также заболеваний, включая изучение причин их возникновения, механизмов развития, клинических проявлений, вопросов диагностики, а также разработку эффективных методов их лечения и профилактики.",
+      "owner": 1
+    }
+  },
+  {
+    "model": "medical_site.department",
+    "pk": 2,
+    "fields": {
+      "name": "Неврология",
+      "description": "Область медицины, которая занимается лечением заболеваний центральной и периферической нервной системы человека.",
+      "owner": 1
+    }
+  },
+  {
+    "model": "medical_site.department",
+    "pk": 3,
+    "fields": {
+      "name": "Урология",
+      "description": "Область клинической медицины, изучающая этиологию, патогенез, диагностику заболеваний органов мочевой системы, половой системы и других патологических процессов в забрюшинном пространстве и разрабатывающая методы их лечения и профилактики",
+      "owner": 1
+    }
+  },
+  {
+    "model": "medical_site.department",
+    "pk": 4,
+    "fields": {
+      "name": "Онкология",
+      "description": "Раздел медицины, изучающий доброкачественные и злокачественные опухоли, механизмы и закономерности их возникновения и развития, методы их профилактики, диагностики и лечения",
+      "owner": 1
+    }
+  },
+  {
+    "model": "medical_site.department",
+    "pk": 5,
+    "fields": {
+      "name": "Педиатрия",
+      "description": "Самостоятельная область медицинской науки, которая изучает закономерности развития ребенка, причины, патогенез, клинические проявления, лечение и профилактику заболеваний детского возраста.",
+      "owner": 1
+    }
+  },
+  {
+    "model": "medical_site.department",
+    "pk": 6,
+    "fields": {
+      "name": "Стоматология",
+      "description": "Раздел медицины, занимающийся изучением зубов, их строения и функционирования, их заболеваний, методов их профилактики и лечения, а также болезней полости рта, челюстей и пограничных областей лица и шеи",
+      "owner": 1
+    }
+  },
+  {
+    "model": "medical_site.department",
+    "pk": 7,
+    "fields": {
+      "name": "Дерматология",
+      "description": "Раздел медицины, изучающий строение и функционирование кожи и её придатков — волос, ногтей, а также слизистых оболочек, заболевания кожи, её придатков и слизистых, методы их профилактики и лечения.",
+      "owner": 1
+    }
+  },
+  {
+    "model": "medical_site.department",
+    "pk": 8,
+    "fields": {
+      "name": "Ортопедия",
+      "description": "Раздел клинической медицины, раздел хирургии, изучающий профилактику, диагностику и лечение деформаций и нарушений функций костно-мышечной системы, которые являются результатом врождённых дефектов, пороков развития, последствий травм или заболеваний.",
+      "owner": 1
+    }
+  },
+  {
+    "model": "medical_site.department",
+    "pk": 9,
+    "fields": {
+      "name": "Гастроэнтерология",
+      "description": "Раздел медицины, изучающий желудочно-кишечный тракт (ЖКТ) человека, его строение и функционирование, его заболевания и методы их лечения.",
+      "owner": 1
+    }
+  },
+  {
+    "model": "medical_site.department",
+    "pk": 10,
+    "fields": {
+      "name": "Эндокринология",
+      "description": "Наука о строении и функции желёз внутренней секреции (эндокринных желёз), вырабатываемых ими продуктах (гормонах), о путях их образования и действия на организм животных и человека; а также о заболеваниях, вызванных нарушением функции этих желёз или действиями этих гормонов",
+      "owner": 1
+    }
+  },
+  {
+    "model": "medical_site.doctors",
+    "pk": 1,
+    "fields": {
+      "first_name": "Александр",
+      "last_name": "Волков",
+      "avatar": "doctors/Volkov.jpg",
+      "year_of_experience": 5,
+      "department": 4,
+      "hospital": 6,
+      "owner": 1
+    }
+  },
+  {
+    "model": "medical_site.doctors",
+    "pk": 2,
+    "fields": {
+      "first_name": "Петер",
+      "last_name": "Ульрих",
+      "avatar": "doctors/ulrich.jpg",
+      "year_of_experience": 40,
+      "department": 5,
+      "hospital": 2,
+      "owner": 1
+    }
+  },
+  {
+    "model": "medical_site.doctors",
+    "pk": 3,
+    "fields": {
+      "first_name": "Рон",
+      "last_name": "Арбель",
+      "avatar": "doctors/arbel.jpg",
+      "year_of_experience": 40,
+      "department": 8,
+      "hospital": 3,
+      "owner": 1
+    }
+  },
+  {
+    "model": "medical_site.doctors",
+    "pk": 4,
+    "fields": {
+      "first_name": "Катерина",
+      "last_name": "Ланиа",
+      "avatar": "doctors/lania.jpeg",
+      "year_of_experience": 37,
+      "department": 3,
+      "hospital": 4,
+      "owner": 1
+    }
+  },
+  {
+    "model": "medical_site.doctors",
+    "pk": 5,
+    "fields": {
+      "first_name": "Наталья",
+      "last_name": "Хаузер",
+      "avatar": "doctors/hauser.jpeg",
+      "year_of_experience": 10,
+      "department": 2,
+      "hospital": 5,
+      "owner": 1
+    }
+  },
+  {
+    "model": "medical_site.doctors",
+    "pk": 6,
+    "fields": {
+      "first_name": "Асуде",
+      "last_name": "Караполат",
+      "avatar": "doctors/asude.jpeg",
+      "year_of_experience": 10,
+      "department": 7,
+      "hospital": 1,
+      "owner": 1
+    }
+  },
+  {
+    "model": "medical_site.doctors",
+    "pk": 7,
+    "fields": {
+      "first_name": "Эсма",
+      "last_name": "Сонмез",
+      "avatar": "doctors/sonmez.jpeg",
+      "year_of_experience": 18,
+      "department": 6,
+      "hospital": 1,
+      "owner": 1
+    }
+  },
+  {
+    "model": "medical_site.doctors",
+    "pk": 8,
+    "fields": {
+      "first_name": "Карло",
+      "last_name": "Мелони",
+      "avatar": "doctors/meloni.jpeg",
+      "year_of_experience": 33,
+      "department": 1,
+      "hospital": 4,
+      "owner": 1
+    }
+  },
+  {
+    "model": "medical_site.doctors",
+    "pk": 9,
+    "fields": {
+      "first_name": "Нафтали",
+      "last_name": "Штерн",
+      "avatar": "doctors/shtern.jpg",
+      "year_of_experience": 49,
+      "department": 10,
+      "hospital": 3,
+      "owner": 1
+    }
+  },
+  {
+    "model": "medical_site.doctors",
+    "pk": 10,
+    "fields": {
+      "first_name": "Арнульф",
+      "last_name": "Ферлич",
+      "avatar": "doctors/ferlich.jpeg",
+      "year_of_experience": 24,
+      "department": 9,
+      "hospital": 5,
+      "owner": 1
+    }
+  },
+  {
+    "model": "medical_site.products",
+    "pk": 2,
+    "fields": {
+      "name": "Tonometer AD-05",
+      "description": "Предназначение устройства – возможность измерить артериальное давление по осциллометрическому принципу.",
+      "photo": "product/tonometr_Bm39PaF.jpg",
+      "price": 4000,
+      "owner": 1
+    }
+  },
+  {
+    "model": "medical_site.products",
+    "pk": 3,
+    "fields": {
+      "name": "Аспирин",
+      "description": "Лекарственное средство, оказывающее обезболивающее, жаропонижающее, противовоспалительное действие. В одной коробке 10 штук",
+      "photo": "product/aspirin.jpg",
+      "price": 200,
+      "owner": 1
+    }
+  },
+  {
+    "model": "medical_site.products",
+    "pk": 4,
+    "fields": {
+      "name": "Ингалятор от астмы",
+      "description": "Ингалятор от астмы распыляя жидкость, которую он содержит, превращает ее в очень мелкий туман, который можно вдохнуть. Благодаря этому туману химический состав ингалятора от астмы эффективно воздействует на мышцы в легких.",
+      "photo": "product/astma.jpg",
+      "price": 10000,
+      "owner": 1
+    }
+  },
+  {
+    "model": "medical_site.blog",
+    "pk": 1,
+    "fields": {
+      "name": "Как замедлить процесс старения?",
+      "slug": "kak-zamedlit-protsess-stareniya",
+      "description": "Современная косметология и эстетическая медицина предлагает широкий спектр процедур, позволяющих замедлить процесс старения.\r\n\r\nЛазерное омоложение – это современный метод уменьшения возрастных признаков, а также коррекции таких эстетических проблем, как шрамы от акне, пигментные пятна, сосудистые звездочки. Лазерное излучение проникает в глубокие слои кожи, нагревая ее. Это способствует сокращению коллагеновых волокон, за счет чего достигается эффект лифтинга. Дополнительно процедура стимулирует выработку «молодого» коллагена, что способствует повышению упругости и эластичности кожи.\r\n\r\nКислородное омоложение- Суть процедуры заключается в использовании высококонцентрированного кислорода. Предварительно на кожу наносится сыворотка на основе гиалуроновой кислоты. Струя кислорода, которая подается на кожу через специальный инфузор под высоким давлением способствует более глубокому проникновению сыворотки в кожу лица и тела. Процедура способствует интенсивному увлажнению кожи, уменьшению тонких линий и более глубоких морщин, выравниванию тона и улучшению цвета лица.\r\n\r\nКапсула омоложения-В последнее время косметологическая индустрия предлагает комплексные решения, которые помогают предотвратить преждевременное старение. Это так называемые омолаживающие капсулы. Они обеспечивают комбинированный эффект за счет применения инфракрасного излучения, гидротерапии, ароматерапии, фитотерапии, кислородной терапии, массажа, масок и различных обертываний. По сути это комплекс СПА-процедур, направленный на улучшение состояния кожи, релаксацию и отдых.",
+      "preview": "blog/old.jpeg",
+      "created_at": "2024-06-19",
+      "owner": 1,
+      "views_count": 17
+    }
+  },
+  {
+    "model": "medical_site.blog",
+    "pk": 2,
+    "fields": {
+      "name": "Что нужно знать при раке груди?",
+      "slug": "chto-nuzhno-znat-pri-rake-grudi",
+      "description": "Причины развития злокачественных опухолей груди точно не ясны. По неизвестным причинам одна клетка ткани молочной железы начинает бесконтрольно делиться, воспроизводя себе подобные аномальные клетки. Таким образом формируется опухоль. Ученые выявили факторы риска, которые могут увеличивать вероятность развития рака груди. К ним относятся:\r\n\r\nвозраст после 40 лет;\r\nсемейная и личная история рака молочной железы;\r\nранняя менструация и поздняя менопауза;\r\nпоздняя беременность (после 30 лет) или отсутствие беременностей;\r\nпредыдущая лучевая терапия грудной клетки;\r\nдлительная гормонотерапия;\r\nзлоупотребление алкоголем.\r\nНаличие факторов риска не обязательно означает, что у женщины возникнет рак. Однако пациентам, которые входят в группу риска необходимо более внимательно следить за здоровьем молочных желез.",
+      "preview": "blog/breastcancer.jpg",
+      "created_at": "2024-06-19",
+      "owner": 1,
+      "views_count": 2
+    }
+  },
+  {
+    "model": "medical_site.blog",
+    "pk": 3,
+    "fields": {
+      "name": "Можно ли сделать пересадку печени при циррозе?",
+      "slug": "mozhno-li-sdelat-peresadku-pecheni-pri-tsirroze",
+      "description": "Цирроз является одним из самых распространенных причин, почему возникает потребность в пересадке. Развиваться он может на фоне гепатитов, злоупотребления алкоголем, при аутоиммунных поражениях органа. При этом заболевании в органе происходят необратимые изменения. Клетки печени гепатоциты замещаются фиброзной тканью. В результате орган теряет возможность нормально функционировать, прогрессирует печеночная недостаточность. Пересадка печени при циррозе дает возможность вернуть функциональность органа, может существенно улучшить качество жизни и снизить риск смертельного исхода.\r\n\r\nОднако цирроз – не единственная патология, при которой требуется пересадка. Есть ряд других состояний, когда трансплантация является единственной возможностью продлить жизнь.",
+      "preview": "blog/liver.jpeg",
+      "created_at": "2024-06-19",
+      "owner": 1,
+      "views_count": 1
+    }
+  },
+  {
+    "model": "medical_site.contact",
+    "pk": 1,
+    "fields": {
+      "name": "BakMil",
+      "number": "+90-212-530-14-53",
+      "email": "bakmil@mail.com.tr"
+    }
+  },
+  {
+    "model": "users.user",
+    "pk": 1,
+    "fields": {
+      "password": "pbkdf2_sha256$720000$xwUI4OOkIpcq6cVK2QzBtE$QzTiA3TU0Dfif7+D8d75AbmfVRqESnm3/3WCjcC2d3o=",
+      "last_login": "2024-06-19T20:02:17.049Z",
+      "is_superuser": true,
+      "first_name": "admin",
+      "last_name": "",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2024-06-14T20:01:37.604Z",
+      "avatar": "",
+      "phone": null,
+      "country": null,
+      "token": null,
+      "email": "admin@ist34",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "users.user",
+    "pk": 10,
+    "fields": {
+      "password": "pbkdf2_sha256$720000$sAfM3PRv55yZXvbQ3SSU3I$j93w6LlqgWDBhrgiIOaI0VvwvUf9z/qpEsBdk/AQmLk=",
+      "last_login": "2024-06-19T20:03:00.833Z",
+      "is_superuser": false,
+      "first_name": "",
+      "last_name": "",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2024-06-19T19:40:40.067Z",
+      "avatar": "",
+      "phone": null,
+      "country": "Турция",
+      "token": "7de31bcc82c274a3",
+      "email": "ibish_acmilan@mail.ru",
+      "groups": [],
+      "user_permissions": []
+    }
+  }
+]

@@ -1,0 +1,49 @@
+{% extends 'medical_site/base.html' %}
+{% load static %}
+{% load my_tags %}
+
+
+{% block icon %}
+    <title>Страница блога</title>
+    <link rel="icon" href="{% static 'images/detail.png' %}" type="image/x-icon">
+{% endblock %}
+
+{% block content %}
+<div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+    <h1 class="display-4">BakMil</h1>
+    <p class="lead">Добро пожаловать в наш центр ^_^</p>
+</div>
+<div class="col-12 mb-5">
+  <a href="{% url 'medical_site:add_blog' %}" class="btn btn-outline-primary">Добавить блог</a>
+</div>
+<div class="album py-5 bg-light">
+  <div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card mb-4 box-shadow">
+                <img class="card-img-top"
+                     src="{{ blog.preview | mymedia }}"
+                     alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-text"><strong>Название:</strong> {{blog.name}} </p>
+                  <p class="card-text"><strong>Описание:</strong> : {{blog.description}} </p>
+                  <p class="card-text"><strong>Дата создания:</strong> {{blog.created_at}} </p>
+                  <p class="card-text"><strong>Количество просмотров:</strong>  {{blog.views_count}} </p>
+                  <p class="card-text"><strong>Автор блога:</strong> {{blog.owner|default:"Безымянный"}} </p>
+                    <br>
+                  <br><div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                        <a href="{% url 'medical_site:edit_blog' blog.pk %}" type="button"
+                           class="btn btn-sm btn-outline-secondary">Редактировать</a>
+                        <a href="{% url 'medical_site:delete_blog' blog.pk %}" type="button"
+                           class="btn btn-sm btn-outline-secondary">Удалить</a>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
+

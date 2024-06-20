@@ -1,0 +1,33 @@
+{% extends 'medical_site/base.html' %}
+{% load static %}
+{% load my_tags %}
+
+{% block icon %}
+    <title>Страница клиники</title>
+    <link rel="icon" href="{% static 'images/detail.png' %}" type="image/x-icon">
+{% endblock %}
+
+{% block content %}
+<div class="col-12 mb-5">
+    <a href="{% url 'medical_site:add_hospital' %}" class="btn btn-outline-primary">Добавить клинику</a>
+</div>
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card mb-4 box-shadow">
+        <img class="card-img-top"
+             src="{{ object.preview | mymedia }}"
+             alt="Card image cap">
+        <div class="card-body">
+            <p class="card-text"><strong>{{ object.name }}</strong></p>
+            <p class="card-text">{{ object.description }}</p>
+            <p class="card-text">{{ object.location }}</p>
+        </div>
+          <div class="btn-group">
+                <a href="{% url 'medical_site:edit_hospital' object.pk %}" type="button" class="btn btn-sm btn-outline-secondary">Редактировать</a>
+                <a href="{% url 'medical_site:delete_hospital' object.pk %}" type="button" class="btn btn-sm btn-outline-secondary">Удалить</a>
+          </div>
+      </div>
+    </div>
+  </div>
+
+{% endblock %}

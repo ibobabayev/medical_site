@@ -1,0 +1,31 @@
+{% extends 'medical_site/base.html' %}
+{% load static %}
+
+
+
+{% block icon %}
+    <title>Удалить товар</title>
+    <link rel="icon" href="{% static 'images/delete.png' %}" type="image/x-icon">
+
+{% endblock %}
+<h3 style="text-align:center">Удалить товар </h3>
+
+{% block content %}
+    <div class="col-12">
+        <div class="row">
+            <div class="col-6">
+                <div class="card">
+                    <div class="card-body">
+                        <form method="post" enctype="multipart/form-data">
+                            {% csrf_token %}
+                            <p>Действительно ли вы хотите удалить товар {{object.name}} </p>
+                            <button type="submit" class="btn btn-danger">Подтвердить</button>
+                            <a href="{% url 'medical_site:list_product' %}" class="btn btn-warning">Отмена</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

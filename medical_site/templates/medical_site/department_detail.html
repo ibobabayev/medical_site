@@ -1,0 +1,47 @@
+{% extends 'medical_site/base.html' %}
+{% load static %}
+
+{% block icon %}
+    <title>Страница отделения</title>
+    <link rel="icon" href="{% static 'images/detail.png' %}" type="image/x-icon">
+{% endblock %}
+{% block content %}
+<div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+    <h1 class="display-4">BakMil</h1>
+    <p class="lead">Добро пожаловать в наш центр ^_^</p>
+</div>
+<div class="col-12 mb-5">
+  <a href="{% url 'medical_site:add_department' %}" class="btn btn-outline-primary">Добавить отделение</a>
+</div>
+<div class="album py-5 bg-light">
+  <div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card mb-4 box-shadow">
+                <div class="card-body">
+                  <p class="card-text"><strong>Отделение:</strong> {{department.name}} </p>
+                  <p class="card-text"><strong>Описание:</strong> {{department.description }} </p>
+                    {% for departament in object.doctors_set.all %}
+                    <p class="card-text"><strong>Врачи:</strong>
+                        <a href="{% url 'medical_site:view_doctor' departament.pk %}"
+                           type="button"
+                           class="btn btn-sm btn-outline-secondary">{{ departament.first_name }} {{ departament.last_name }}</a>
+                        <br> <strong>Стаж работы в годах:</strong> {{ departament.year_of_experience }}
+                        <br> <strong>Место работы:</strong> {{departament.hospital }}
+                    </p>
+                    {% endfor %}
+                  <br><div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                        <a href="{% url 'medical_site:edit_department' department.pk %}" type="button"
+                           class="btn btn-sm btn-outline-secondary">Редактировать</a>
+                        <a href="{% url 'medical_site:delete_department' department.pk %}" type="button"
+                           class="btn btn-sm btn-outline-secondary">Удалить</a>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

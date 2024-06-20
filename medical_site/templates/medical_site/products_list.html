@@ -1,0 +1,94 @@
+{% extends 'medical_site/base.html' %}
+{% load static %}
+{% load my_tags %}
+
+{% block icon %}
+<title>Список товаров</title>
+<link rel="icon" href="{% static 'images/store.png' %}" type="image/x-icon">
+
+{% endblock %}
+
+{% block content %}
+ <div class="heading  default align-center color-black subcolor-main transform-default has-subheader icon-type-hidden   vc_custom_1541378176591 heading-tag-h2"
+                         id="like_sc_header_1820751711"><h6
+                            class="subheader ltx-sr-id-like_sc_header_1820751711712587166 ltx-sr ltx-sr-effect-fade_in ltx-sr-el-block ltx-sr-delay-100 ltx-sr-duration-300 ltx-sr-sequences-50">
+                        Онлайн магазин</h6>
+                        <h2 class="header ltx-sr-id-like_sc_header_18207517111098788038 ltx-sr ltx-sr-effect-fade_in ltx-sr-el-block ltx-sr-delay-0 ltx-sr-duration-1000 ltx-sr-sequences-0">
+                            Медицинские товары</h2></div>
+                    <div class="es-resp">
+                        <div class="visible-xl" style="height: 36px;"></div>
+                        <div class="hidden-xl hidden-md hidden-sm hidden-ms hidden-xs" style="height: 36px;"></div>
+                        <div class="visible-md" style="height: 36px;"></div>
+                        <div class="visible-sm " style="height: 36px;"></div>
+                        <div class="visible-ms" style="height: 36px;"></div>
+                        <div class="visible-xs" style="height: 36px;"></div>
+                    </div>
+                    <div class="woocommerce">
+                        <ul class="products products-sc products-sc-simple columns-4 posts-4 ">
+                            {% for product in product_list %}
+                            <li id="post-5568"
+                                class="post-5568 product type-product status-publish has-post-thumbnail product_cat-neurosurgery product_tag-cardiology product_tag-urology first instock shipping-taxable purchasable product-type-simple">
+                                <div class="item"><a href="http://holamed.like-themes.com/product/tonometer-ad-05/">
+                                    <div class="image">
+                                        <img width="340" height="340"
+                                             src="{{ product.photo | mymedia }}"
+                                             class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt=""
+                                             decoding="async" loading="lazy"
+                                             srcset="{{ product.photo | mymedia }}"
+                                             sizes="(max-width: 340px) 100vw, 340px"/></div>
+                                    <h2 class="woocommerce-loop-product__title">{{ product.name }}</h2></a>
+                                    <div class="post_content entry-content">{{ product.description | truncatechars:50}}
+                                    </div>
+                                   {{product.price}} рублей
+                                    <a href="{% url 'medical_site:view_product' product.pk %}"
+                                       class="button product_type_simple add_to_cart_button ajax_add_to_cart"
+                                       aria-label="Add &ldquo;Tonometer AD-05&rdquo; to your cart" rel="nofollow">Детальный осмотр</a></div>
+                            </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                    <div class="es-resp">
+                        <div class="visible-xl" style="height: 32px;"></div>
+                        <div class="hidden-xl hidden-md hidden-sm hidden-ms hidden-xs" style="height: 32px;"></div>
+                        <div class="visible-md" style="height: 32px;"></div>
+                        <div class="visible-sm " style="height: 32px;"></div>
+                        <div class="visible-ms" style="height: 32px;"></div>
+                        <div class="visible-xs" style="height: 32px;"></div>
+                    </div>
+                    <div class="es-resp">
+                        <div class="visible-xl" style="height: 32px;"></div>
+                        <div class="hidden-xl hidden-md hidden-sm hidden-ms hidden-xs" style="height: 32px;"></div>
+                        <div class="visible-md" style="height: 32px;"></div>
+                        <div class="visible-sm " style="height: 32px;"></div>
+                        <div class="visible-ms" style="height: 32px;"></div>
+                        <div class="visible-xs" style="height: 32px;"></div>
+                    </div>
+
+
+<div class="col-12 mb-5">
+  <a href="{% url 'medical_site:add_product' %}" class="btn btn-outline-primary">Добавить товар</a>
+</div>
+<div class="album py-5 bg-light">
+  <div class="container">
+    <div class="row">
+        {% for product in product_list %}
+        <div class="col-md-4">
+            <div class="card mb-4 box-shadow">
+                <div class="card-body">
+                  <p class="card-text"><strong>Название: {{product.name}} </strong></p>
+                  <p class="card-text">Цена: {{ product.price }} $</p>
+                    <br>
+                  <br><div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a href="{% url 'medical_site:view_product' product.pk %}" type="button" class="btn btn-sm btn-outline-secondary">Детальный просмотр</a>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+  </div>
+</div>
+{% endblock %}
+
