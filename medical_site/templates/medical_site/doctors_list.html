@@ -8,7 +8,10 @@
 {% endblock %}
 
 {% block content %}
-
+<div class="col-12 mb-5">
+    <a href="{% url 'medical_site:add_doctor' %}" class="btn btn-outline-primary">
+        Добавить врача</a>
+</div>
 <section class="vc_section">
     <div class="vc_row wpb_row vc_row-fluid">
         <div class="wpb_column vc_column_container vc_col-sm-12">
@@ -68,5 +71,6 @@
                 </div>
             </div>
         </div>
- </section>
+    </div>
+</section>
 {% endblock %}

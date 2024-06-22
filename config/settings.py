@@ -148,6 +148,6 @@ LOGIN_URL = 'users:login'
 
 EMAIL_USE_TLS = True
 EMAIL_HOST = 'smtp.mail.ru'
-EMAIL_HOST_USER = 'ibish_acmilan@mail.ru'
-EMAIL_HOST_PASSWORD = 'azN9YzTepmSfqFRBD6w6'
+EMAIL_HOST_USER = os.getenv('EMAIL_HOST_USER')
+EMAIL_HOST_PASSWORD = os.getenv('PASSWORD')
 EMAIL_PORT = 587

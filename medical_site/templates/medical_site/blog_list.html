@@ -26,11 +26,11 @@
     <article id="post-6615"
              class="ltx-featured-post post-6615 post type-post status-publish format-standard has-post-thumbnail hentry category-cardiology category-surgery tag-cardiology tag-food tag-health tag-neurosurgery">
         <a href="{% url 'medical_site:view_blog' blog.pk %}"
-           class="photo"><img width="300" height="300"
+           class="photo"><img width="300" height="200"
                               src="{{ blog.preview | mymedia }}"
                               class="attachment-holamed-blog-featured size-holamed-blog-featured wp-post-image"
                               alt="" decoding="async" loading="lazy" srcset="{{ blog.preview | mymedia }}"
-                              sizes="(max-width: 355px) 100vw, 355px"/>
+                              sizes="(max-width: 355px) 100vw, 355px"/></a>
             <div class="description">
                 <a href="{% url 'medical_site:view_blog' blog.pk %}"
                    class="header"><h3>{{ blog.name }}</h3></a>

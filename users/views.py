@@ -1,3 +1,4 @@
+from django.contrib.auth import logout
 from django.contrib.auth.mixins import UserPassesTestMixin,LoginRequiredMixin
 from django.urls import reverse_lazy,reverse
 
@@ -82,3 +83,7 @@ class UserDeleteView(LoginRequiredMixin,UserPassesTestMixin,DeleteView):
 
     def test_func(self):
         return self.request.user.is_staff
+
+def logout_view(request):
+    logout(request)
+    return redirect('/')

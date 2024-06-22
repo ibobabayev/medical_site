@@ -28,16 +28,17 @@
     <ul class="products products-sc products-sc-simple columns-4 posts-4 ">
         <li
                 class="post-5568 product type-product status-publish has-post-thumbnail product_cat-neurosurgery product_tag-cardiology product_tag-urology first instock shipping-taxable purchasable product-type-simple">
-                <div class="image">
-                    <img class="card-img-top" width="350" height="350"
-                         src="{{ hospital.preview | mymedia }}"
-                         alt="Card image cap">
-                    <h2 class="woocommerce-loop-product__title">{{ hospital.name }}</h2>
-                    <div class="post_content entry-content"> {{ hospital.location }}</div>
-                    <a href="{% url 'medical_site:view_hospital' hospital.pk %}"
-                       class="button product_type_simple add_to_cart_button ajax_add_to_cart"
-                       aria-label="етл &ldquo;Aspirin 10 pills&rdquo; to your cart" rel="nofollow">Детальный осмотр</a>
-                </div>
+            <div class="image">
+                <img class="card-img-top" width="350" height="350"
+                     src="{{ hospital.preview | mymedia }}"
+                     alt="Card image cap">
+                <h2 class="woocommerce-loop-product__title">{{ hospital.name }}</h2>
+                <div class="post_content entry-content"> {{ hospital.location }}</div>
+                <a href="{% url 'medical_site:view_hospital' hospital.pk %}"
+                   class="button product_type_simple add_to_cart_button ajax_add_to_cart"
+                   aria-label="етл &ldquo;Aspirin 10 pills&rdquo; to your cart" rel="nofollow">Детальный
+                    осмотр</a>
+            </div>
         </li>
     </ul>
 </div>
