@@ -7,14 +7,17 @@ from django.views.generic import CreateView,ListView,DetailView,UpdateView,Delet
 
 from pytils.translit import slugify
 
-from django.contrib.auth.mixins import LoginRequiredMixin,UserPassesTestMixin
+from django.contrib.auth.mixins import LoginRequiredMixin
+
+
 class HomePageTemplateView(TemplateView):
     template_name = 'medical_site/base.html'
 class HospitalCreateView(LoginRequiredMixin,CreateView):
     model = Hospitals
+    fields =  ('name', 'description', 'location','preview','email',)
     login_url = "users:login"
-    fields = "__all__"
     success_url = reverse_lazy('medical_site:list_hospital')
+
 
 class HospitalListView(ListView):
     model = Hospitals
@@ -43,7 +46,7 @@ class HospitalUpdateView(LoginRequiredMixin,UpdateView):
         else:
             raise Http404
 
-class HospitalDeleteView(LoginRequiredMixin,UserPassesTestMixin,DeleteView):
+class HospitalDeleteView(LoginRequiredMixin,DeleteView):
     model = Hospitals
     login_url = "users:login"
     success_url = reverse_lazy('medical_site:list_hospital')
@@ -53,8 +56,15 @@ class HospitalDeleteView(LoginRequiredMixin,UserPassesTestMixin,DeleteView):
 class DoctorsCreateView(LoginRequiredMixin,CreateView):
     model = Doctors
     login_url = "users:login"
-    fields = "__all__"
+    fields =  ('first_name', 'last_name', 'avatar','year_of_experience','department','hospital',)
     success_url = reverse_lazy('medical_site:list_doctor')
+
+    def form_valid(self, form):
+        self.object = form.save()
+        self.object.owner = self.request.user
+        self.object.save()
+        return super().form_valid(form)
+
 
 class DoctorsListView(ListView):
     model = Doctors
@@ -77,7 +87,7 @@ class DoctorsUpdateView(LoginRequiredMixin,UpdateView):
             return self.object
         else:
             raise Http404
-class DoctorsDeleteView(LoginRequiredMixin,UserPassesTestMixin,DeleteView):
+class DoctorsDeleteView(LoginRequiredMixin,DeleteView):
     model = Doctors
     login_url = "users:login"
     success_url = reverse_lazy('medical_site:list_doctor')
@@ -88,8 +98,14 @@ class DoctorsDeleteView(LoginRequiredMixin,UserPassesTestMixin,DeleteView):
 class DepartmentCreateView(LoginRequiredMixin,CreateView):
     model = Department
     login_url = "users:login"
-    fields = "__all__"
+    fields = ('name', 'description',)
     success_url = reverse_lazy('medical_site:list_department')
+
+    def form_valid(self, form):
+        self.object = form.save()
+        self.object.owner = self.request.user
+        self.object.save()
+        return super().form_valid(form)
 
 class DepartmentListView(ListView):
     model = Department
@@ -113,7 +129,7 @@ class DepartmentUpdateView(LoginRequiredMixin,UpdateView):
         else:
             raise Http404
 
-class DepartmentsDeleteView(LoginRequiredMixin,UserPassesTestMixin,DeleteView):
+class DepartmentsDeleteView(LoginRequiredMixin,DeleteView):
     model = Department
     login_url = "users:login"
     success_url = reverse_lazy('medical_site:list_department')
@@ -123,8 +139,14 @@ class DepartmentsDeleteView(LoginRequiredMixin,UserPassesTestMixin,DeleteView):
 class ProductsCreateView(LoginRequiredMixin,CreateView):
     model = Products
     login_url = "users:login"
-    fields = "__all__"
+    fields = ("name","description","photo","price")
     success_url = reverse_lazy('medical_site:list_product')
+
+    def form_valid(self, form):
+        self.object = form.save()
+        self.object.owner = self.request.user
+        self.object.save()
+        return super().form_valid(form)
 
 class ProductsListView(ListView):
     model = Products
@@ -148,7 +170,7 @@ class ProductsUpdateView(LoginRequiredMixin,UpdateView):
         else:
             raise Http404
 
-class ProductsDeleteView(LoginRequiredMixin,UserPassesTestMixin,DeleteView):
+class ProductsDeleteView(LoginRequiredMixin,DeleteView):
     model = Products
     login_url = "users:login"
     success_url =reverse_lazy('medical_site:list_product')
@@ -208,7 +230,7 @@ class BlogUpdateView(LoginRequiredMixin,UpdateView):
         else:
             raise Http404
 
-class BlogDeleteView(LoginRequiredMixin,UserPassesTestMixin,DeleteView):
+class BlogDeleteView(LoginRequiredMixin,DeleteView):
     model = Blog
     login_url = "users:login"
     success_url =reverse_lazy('medical_site:list_blog')
