@@ -18,6 +18,12 @@ class HospitalCreateView(LoginRequiredMixin,CreateView):
     login_url = "users:login"
     success_url = reverse_lazy('medical_site:list_hospital')
 
+    def form_valid(self, form):
+        self.object = form.save()
+        self.object.owner = self.request.user
+        self.object.save()
+        return super().form_valid(form)
+
 
 class HospitalListView(ListView):
     model = Hospitals
